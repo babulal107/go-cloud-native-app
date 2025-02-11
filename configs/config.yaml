@@ -1,0 +1,11 @@
+# configs/config.yaml
+server:
+  logLevel: "debug"
+  port: 8080
+
+database:
+  user: "root"
+  password: "user123"
+  host: "localhost"
+  port: 5432
+  name: "users_db"
