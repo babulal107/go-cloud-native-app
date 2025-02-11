@@ -43,11 +43,13 @@ run-mongodb: # Run the mongodb container
 
 # using docker-compose file
 up:
-	docker compose up -d
-	# docker compose up -d --build
+	podman-compose up -d
+	# docker-compose up -d --build
 
 down:
-	docker compose down
+	podman-compose down
+	# docker-compose down
 
 check-logs:
-	docker compose logs go_backend
+	podman-ompose logs go_backend
+    # docker-compose logs go_backend
